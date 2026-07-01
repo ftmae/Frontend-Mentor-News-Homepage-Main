@@ -2,9 +2,10 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    gap: 2rem;
 }
 
-.nav-list li:hover{
+.nav-list a:hover{
    color:  hsl(var(--clr-red));
 }
 
@@ -29,7 +30,7 @@
     padding: 1rem 2rem;
 }
 
-.header-menu[aria-expanded="true"]{
+.header-menu.opened{
     transform: translateX(0%);
 
 }

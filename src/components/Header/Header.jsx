@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo.svg';
 import menuIcon from '../../assets/images/icon-menu.svg';
 import closeMenu from '../../assets/images/icon-menu-close.svg';
 import NavList from './NavList.jsx';
-import './header.css';
+import './Header.css';
 
 export default function Header(){
     const [size, setSize] = useState(window.innerWidth);
@@ -11,7 +11,6 @@ export default function Header(){
 
     useEffect(()=>{
         function handleResize(){
-            console.log('resizing');
             setSize(window.innerWidth);
         }
         window.addEventListener('resize', handleResize);
@@ -28,8 +27,8 @@ export default function Header(){
             { 
                 size <= 768 ? 
                     <>
-                        <button onClick={handleClick} className='bg-trans border-trans'><img src={isOpen ? closeMenu : menuIcon} alt={isOpen ? 'Close Header Icon' : 'Open Header Icon'} /></button> 
-                        <div className='header-menu' aria-expanded={isOpen}>
+                        <button onClick={handleClick} className='bg-trans border-trans'><img src={isOpen ? closeMenu : menuIcon} alt={isOpen ? 'Close Header Icon' : 'Open Header Icon'} aria-expanded={isOpen}/></button> 
+                        <div className={`header-menu ${isOpen ? 'opened' : ''}`} aria-expanded={isOpen}>
                             <NavList flexDirection='flex-column'/>
                         </div>
                     </>
