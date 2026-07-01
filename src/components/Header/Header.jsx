@@ -28,7 +28,7 @@ export default function Header(){
                 size <= 768 ? 
                     <>
                         <button onClick={handleClick} className='bg-trans border-trans'><img src={isOpen ? closeMenu : menuIcon} alt={isOpen ? 'Close Header Icon' : 'Open Header Icon'} aria-expanded={isOpen}/></button> 
-                        <div className={`header-menu ${isOpen ? 'opened' : ''}`} aria-expanded={isOpen}>
+                        <div className={`header-menu ${isOpen ? 'opened' : ''}`}>
                             <NavList flexDirection='flex-column'/>
                         </div>
                     </>
