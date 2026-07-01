@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ftmae.github.io/Frontend-Mentor-News-Homepage-Main/)
+- Live Site URL: [News Homepage Live](https://ftmae.github.io/Frontend-Mentor-News-Homepage-Main/)
 
 ## My process
 
